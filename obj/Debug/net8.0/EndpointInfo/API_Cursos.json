@@ -354,6 +354,11 @@
       "Profesor": {
         "type": "object",
         "properties": {
+          "idProfesor": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "nombre": {
             "type": "string",
             "nullable": true
