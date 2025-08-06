@@ -15,9 +15,11 @@ namespace API_Cursos.Services
             _context = context;
         }
 
-        public bool BorrarAlumno()
+        public bool BorrarAlumno(Alumno alumno)
         {
-            throw new NotImplementedException();
+            _context.Remove(alumno);
+            var afectados = _context.SaveChanges();
+            return afectados > 0;
         }
 
         public bool CrearAlumno(Alumno alumno)
@@ -32,6 +34,11 @@ namespace API_Cursos.Services
                 .AsEnumerable().FirstOrDefault();
 
             return (result.Estado == "insertado" || result.Estado == "actualizado") ? true : false;
+        }
+
+        public Alumno GetAlumnoById(int idAlumno)
+        {
+            return _context.Alumnos.Where(w => w.IdAlumno == idAlumno).First();
         }
 
         public List<Alumno> GetAlumnos()

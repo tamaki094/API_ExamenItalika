@@ -37,6 +37,22 @@
   },
   {
     "ContainingType": "API_Cursos.Controllers.CursosController",
+    "Method": "BorrarAlumno",
+    "RelativePath": "api/cursos/alumnos",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAlumno",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Cursos.Controllers.CursosController",
     "Method": "GetCursos",
     "RelativePath": "api/cursos/cursos",
     "HttpMethod": "GET",

@@ -6,6 +6,7 @@ namespace API_Cursos.Interfaces
     {
         List<Alumno> GetAlumnos();
         bool CrearAlumno(Alumno alumno);
-        bool BorrarAlumno();
+        bool BorrarAlumno(Alumno alumno);
+        Alumno GetAlumnoById(int idAlumno);
     }
 }

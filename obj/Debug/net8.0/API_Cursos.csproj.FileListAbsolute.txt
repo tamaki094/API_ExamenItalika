@@ -170,3 +170,4 @@ C:\Users\edria\source\repos\API_Cursos\API_Cursos\obj\Debug\net8.0\API_Cursos.pd
 C:\Users\edria\source\repos\API_Cursos\API_Cursos\obj\Debug\net8.0\API_Cursos.genruntimeconfig.cache
 C:\Users\edria\source\repos\API_Cursos\API_Cursos\obj\Debug\net8.0\ref\API_Cursos.dll
 C:\Users\edria\source\repos\API_Cursos\API_Cursos\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\edria\source\repos\API_Cursos\API_Cursos\obj\Debug\net8.0\API_Cursos.sourcelink.json

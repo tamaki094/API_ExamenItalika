@@ -54,12 +54,38 @@ namespace API_Cursos.Controllers
                 });
 
             }
+        }
+
+        [HttpDelete]
+        [Route("alumnos")]
+        public async Task<dynamic> BorrarAlumno(int idAlumno)
+        {
+            try
+            {
+                Alumno alumno = _alumnosService.GetAlumnoById(idAlumno);
+                var resultado = _alumnosService.BorrarAlumno(alumno);
+
+                if (resultado)
+                    return Ok(new { mensaje = "Alumno borrado correctamente." });
+                else
+                    return BadRequest(new { error = "No se pudo borrar el alumno." });
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    error = "Ocurrio un error inesperado.",
+                    detalle = ex.Message
+                });
+
+            }
 
         }
 
         
 
-        [HttpGet]
+            [HttpGet]
         [Route("cursos")]
         public async Task<List<Curso>> GetCursos()
         {
